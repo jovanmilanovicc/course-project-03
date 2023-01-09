@@ -12,31 +12,31 @@
         <h1>Naslov</h1>
     </header>
     <main>
-        <form>
+        <form action="#" method="GET">
             <section>
                 <h2>How can we help?</h2>
                 <ul>
                     <li>
                         <label for="username">Username</label>
-                        <input type="text" name="username" id="username">
+                        <input type="text" name="username" id="username" required>
                     </li>
                     <li>
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
                     </li>
                     <li>
                         <label for="phone">Phone number</label>
-                        <input type="tel" name="phone" id="phone">
+                        <input type="tel" name="phone" id="phone" required>
                     </li>
                     <li>
                         <label for="msg">Your message</label>
-                        <textarea name="msg" id="msg"></textarea>
+                        <textarea name="msg" id="msg" maxlength="255" required></textarea>
                     </li>
                 </ul>
             </section>
             <section>
                 <label for="select">How did u find us?</label>
-                <select name="select" id="select">
+                <select name="select" id="select" required>
                     <option value="val1">Web search</option>
                     <option value="val2">Social media</option>
                     <option value="val3">Otger</option>
@@ -46,8 +46,8 @@
                     <h2>Reply</h2>
                     <ul>
                         <li>
-                            <input type="radio" name="reply" id="reply-phone" value="val1">
-                            <label for="reply-phone">Call me?</label> 
+                            <input type="radio" name="reply" id="reply-phone" value="val1" minlength="5">
+                            <label for="reply-phone" >Call me?</label> 
                         </li>
                         <li>
                             <input type="radio" name="reply" id="reply-email" value="val2">
@@ -60,7 +60,7 @@
                     </ul>
                 </section>
                 <section>
-                    <input type="checkbox" name="terms" id="terms">
+                    <input type="checkbox" name="terms" id="terms" required>
                     <label for="terms">Acept terms</label>
 
                 </section>
