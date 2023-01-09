@@ -30,7 +30,12 @@
                     </li>
                     <li>
                         <label for="msg">Your message</label>
-                        <textarea name="msg" id="msg" maxlength="255" required></textarea>
+                        <textarea name="msg"
+                         id="msg"
+                          maxlength="255"
+                           required
+                           rows="7"
+                           ></textarea>
                     </li>
                 </ul>
             </section>
@@ -45,28 +50,28 @@
                 <section>
                     <h2>Reply</h2>
                     <ul>
-                        <li>
+                        <li class="inline">
                             <input type="radio" name="reply" id="reply-phone" value="val1" minlength="5">
                             <label for="reply-phone" >Call me?</label> 
                         </li>
-                        <li>
+                        <li class="inline">
                             <input type="radio" name="reply" id="reply-email" value="val2">
                             <label for="reply-email">Send an email</label> 
                         </li> 
-                        <li>
+                        <li class="inline">
                             <input type="radio" name="reply" id="reply-none" value="val3">
                             <label for="reply-none">No response</label> 
                         </li>
                     </ul>
                 </section>
-                <section>
+                <section class="inline">
                     <input type="checkbox" name="terms" id="terms" required>
                     <label for="terms">Acept terms</label>
 
                 </section>
-                <section>
-                    <button type="reset">Clear</button>
-                    <button type="submit">Submit</button>
+                <section id="form-action">
+                    <button type="reset" class="btn-reset">Clear</button>
+                    <button type="submit" class="btn-submit">Submit</button>
                 </section>
         </form>
 
